@@ -1,0 +1,72 @@
+[2023-05-01T11:03:18+08:00][sql] CONNECT:[ UseTime:0.012243s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:03:18+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000844s ]
+[2023-05-01T11:03:18+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000494s ]
+[2023-05-01T11:03:18+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000250s ]
+[2023-05-01T11:03:18+08:00][sql] SHOW FULL COLUMNS FROM `hg_cate` [ RunTime:0.000440s ]
+[2023-05-01T11:03:18+08:00][sql] SELECT * FROM `hg_cate` WHERE  `status` = 1 [ RunTime:0.000291s ]
+[2023-05-01T11:03:19+08:00][sql] CONNECT:[ UseTime:0.000693s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:03:19+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000552s ]
+[2023-05-01T11:03:19+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000236s ]
+[2023-05-01T11:06:06+08:00][sql] CONNECT:[ UseTime:0.016246s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:06:06+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000545s ]
+[2023-05-01T11:06:06+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000263s ]
+[2023-05-01T11:06:06+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000244s ]
+[2023-05-01T11:06:06+08:00][sql] SHOW FULL COLUMNS FROM `hg_cate` [ RunTime:0.000501s ]
+[2023-05-01T11:06:06+08:00][sql] SELECT * FROM `hg_cate` WHERE  `status` = 1 [ RunTime:0.000278s ]
+[2023-05-01T11:06:07+08:00][sql] CONNECT:[ UseTime:0.018562s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:06:07+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000627s ]
+[2023-05-01T11:06:07+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000190s ]
+[2023-05-01T11:06:07+08:00][sql] CONNECT:[ UseTime:0.014126s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:06:07+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000742s ]
+[2023-05-01T11:06:07+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000321s ]
+[2023-05-01T11:06:07+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000202s ]
+[2023-05-01T11:06:07+08:00][sql] SHOW FULL COLUMNS FROM `hg_cate` [ RunTime:0.000577s ]
+[2023-05-01T11:06:07+08:00][sql] SELECT * FROM `hg_cate` WHERE  `status` = 1 [ RunTime:0.000310s ]
+[2023-05-01T11:06:07+08:00][sql] CONNECT:[ UseTime:0.023069s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:06:07+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000593s ]
+[2023-05-01T11:06:07+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000295s ]
+[2023-05-01T11:06:08+08:00][sql] CONNECT:[ UseTime:0.011082s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:06:08+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000558s ]
+[2023-05-01T11:06:08+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000245s ]
+[2023-05-01T11:06:08+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000173s ]
+[2023-05-01T11:06:08+08:00][sql] SHOW FULL COLUMNS FROM `hg_cate` [ RunTime:0.000270s ]
+[2023-05-01T11:06:08+08:00][sql] SELECT * FROM `hg_cate` WHERE  `status` = 1 [ RunTime:0.000360s ]
+[2023-05-01T11:06:08+08:00][sql] CONNECT:[ UseTime:0.000900s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:06:08+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000518s ]
+[2023-05-01T11:06:08+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000252s ]
+[2023-05-01T11:12:10+08:00][sql] CONNECT:[ UseTime:0.013169s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:12:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000675s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000342s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000191s ]
+[2023-05-01T11:12:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_cate` [ RunTime:0.000294s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT * FROM `hg_cate` WHERE  `status` = 1 [ RunTime:0.000174s ]
+[2023-05-01T11:12:10+08:00][sql] CONNECT:[ UseTime:0.010868s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:12:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000739s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000240s ]
+[2023-05-01T11:12:10+08:00][sql] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:12:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000562s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000344s ]
+[2023-05-01T11:12:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_user` [ RunTime:0.000768s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT * FROM `hg_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000363s ]
+[2023-05-01T11:12:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_ask` [ RunTime:0.000713s ]
+[2023-05-01T11:12:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_ask` WHERE  `uid` = 10  AND `time` BETWEEN '2023-05-01 00:00:00' AND '2023-05-01 23:59:59' LIMIT 1 [ RunTime:0.000505s ]
+[2023-05-01T11:12:18+08:00][sql] CONNECT:[ UseTime:0.018629s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:12:18+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000887s ]
+[2023-05-01T11:12:18+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000336s ]
+[2023-05-01T11:12:18+08:00][error] [0]array_slice(): Argument #1 ($array) must be of type array, string given[D:\aaatemp\web\tp6\app\index\controller\Index.php:37]
+[2023-05-01T11:17:28+08:00][sql] CONNECT:[ UseTime:0.000725s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:17:28+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000848s ]
+[2023-05-01T11:17:28+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000239s ]
+[2023-05-01T11:17:28+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000129s ]
+[2023-05-01T11:17:28+08:00][sql] SHOW FULL COLUMNS FROM `hg_cate` [ RunTime:0.000280s ]
+[2023-05-01T11:17:28+08:00][sql] SELECT * FROM `hg_cate` WHERE  `status` = 1 [ RunTime:0.000173s ]
+[2023-05-01T11:17:28+08:00][sql] CONNECT:[ UseTime:0.000520s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:17:28+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000600s ]
+[2023-05-01T11:17:28+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000318s ]
+[2023-05-01T11:17:29+08:00][sql] CONNECT:[ UseTime:0.016443s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-05-01T11:17:29+08:00][sql] SHOW FULL COLUMNS FROM `hg_config` [ RunTime:0.000669s ]
+[2023-05-01T11:17:29+08:00][sql] SELECT * FROM `hg_config` [ RunTime:0.000232s ]
+[2023-05-01T11:17:29+08:00][sql] SHOW FULL COLUMNS FROM `hg_user` [ RunTime:0.000379s ]
+[2023-05-01T11:17:29+08:00][sql] SELECT * FROM `hg_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000215s ]
+[2023-05-01T11:17:29+08:00][sql] SHOW FULL COLUMNS FROM `hg_ask` [ RunTime:0.000783s ]
+[2023-05-01T11:17:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_ask` WHERE  `uid` = 10  AND `time` BETWEEN '2023-05-01 00:00:00' AND '2023-05-01 23:59:59' LIMIT 1 [ RunTime:0.000334s ]

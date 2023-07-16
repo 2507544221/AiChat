@@ -1,0 +1,155 @@
+[2023-04-30T21:43:44+08:00][sql] CONNECT:[ UseTime:0.000547s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:44+08:00][sql] SHOW FULL COLUMNS FROM `hg_login_log` [ RunTime:0.000627s ]
+[2023-04-30T21:43:44+08:00][sql] SHOW FULL COLUMNS FROM `hg_admin` [ RunTime:0.000390s ]
+[2023-04-30T21:43:44+08:00][sql] SELECT * FROM `hg_admin` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.000221s ]
+[2023-04-30T21:43:44+08:00][sql] UPDATE `hg_admin`  SET `last_login_time` = '2023-04-30 21:43:44'  WHERE  `admin_id` = 1 [ RunTime:0.000284s ]
+[2023-04-30T21:43:44+08:00][sql] INSERT INTO `hg_login_log` SET `login_user` = 'admin' , `login_ip` = '127.0.0.1' , `login_area` = '内网IP-内网IP' , `login_user_agent` = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.64' , `login_time` = '2023-04-30 21:43:44' , `login_status` = 1 [ RunTime:0.002851s ]
+[2023-04-30T21:43:45+08:00][sql] CONNECT:[ UseTime:0.012841s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:45+08:00][sql] SHOW FULL COLUMNS FROM `hg_node` [ RunTime:0.000599s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT node_id as id,node_name as title,node_pid as pid,`node_path`,`node_icon` FROM `hg_node` WHERE  `is_menu` = 2 ORDER BY `node_sort` [ RunTime:0.000540s ]
+[2023-04-30T21:43:45+08:00][sql] CONNECT:[ UseTime:0.011513s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:45+08:00][sql] SHOW FULL COLUMNS FROM `hg_user` [ RunTime:0.000651s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` LIMIT 1 [ RunTime:0.000303s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` WHERE  `reg_time` >= '2023-05-01 01:43:45' LIMIT 1 [ RunTime:0.000338s ]
+[2023-04-30T21:43:45+08:00][sql] SHOW FULL COLUMNS FROM `hg_ask` [ RunTime:0.000651s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_ask` LIMIT 1 [ RunTime:0.000349s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_ask` WHERE  `time` >= '2023-05-01 01:43:45' LIMIT 1 [ RunTime:0.000364s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` WHERE  `pay_id` > 1 LIMIT 1 [ RunTime:0.000363s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` WHERE  `pay_id` > 1  AND `reg_time` >= '2023-05-01 01:43:45' LIMIT 1 [ RunTime:0.000492s ]
+[2023-04-30T21:43:45+08:00][sql] SHOW FULL COLUMNS FROM `hg_key` [ RunTime:0.000664s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_key` LIMIT 1 [ RunTime:0.000305s ]
+[2023-04-30T21:43:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_key` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[2023-04-30T21:43:55+08:00][sql] CONNECT:[ UseTime:0.019074s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:55+08:00][sql] SHOW FULL COLUMNS FROM `hg_operate_log` [ RunTime:0.000667s ]
+[2023-04-30T21:43:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_operate_log` LIMIT 1 [ RunTime:0.000385s ]
+[2023-04-30T21:43:55+08:00][sql] SELECT * FROM `hg_operate_log` ORDER BY `log_id` DESC LIMIT 0,15 [ RunTime:0.000396s ]
+[2023-04-30T21:43:55+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:55+08:00][sql] SHOW FULL COLUMNS FROM `hg_operate_log` [ RunTime:0.000600s ]
+[2023-04-30T21:43:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_operate_log` LIMIT 1 [ RunTime:0.000273s ]
+[2023-04-30T21:43:55+08:00][sql] SELECT * FROM `hg_operate_log` ORDER BY `log_id` DESC LIMIT 0,20 [ RunTime:0.000200s ]
+[2023-04-30T21:43:58+08:00][sql] CONNECT:[ UseTime:0.023550s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:58+08:00][sql] SHOW FULL COLUMNS FROM `hg_login_log` [ RunTime:0.000654s ]
+[2023-04-30T21:43:58+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_login_log` LIMIT 1 [ RunTime:0.000334s ]
+[2023-04-30T21:43:58+08:00][sql] SELECT * FROM `hg_login_log` ORDER BY `log_id` DESC LIMIT 0,15 [ RunTime:0.000234s ]
+[2023-04-30T21:43:58+08:00][sql] CONNECT:[ UseTime:0.022073s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:43:58+08:00][sql] SHOW FULL COLUMNS FROM `hg_login_log` [ RunTime:0.000636s ]
+[2023-04-30T21:43:58+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_login_log` LIMIT 1 [ RunTime:0.000278s ]
+[2023-04-30T21:43:58+08:00][sql] SELECT * FROM `hg_login_log` ORDER BY `log_id` DESC LIMIT 0,20 [ RunTime:0.000369s ]
+[2023-04-30T21:44:04+08:00][sql] CONNECT:[ UseTime:0.000563s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:44:04+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000664s ]
+[2023-04-30T21:44:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000483s ]
+[2023-04-30T21:44:04+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000373s ]
+[2023-04-30T21:44:04+08:00][sql] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:44:04+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000634s ]
+[2023-04-30T21:44:04+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000234s ]
+[2023-04-30T21:44:04+08:00][sql] CONNECT:[ UseTime:0.017080s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:44:04+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000601s ]
+[2023-04-30T21:44:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000514s ]
+[2023-04-30T21:44:04+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000328s ]
+[2023-04-30T21:44:05+08:00][sql] CONNECT:[ UseTime:0.000591s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:44:05+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000697s ]
+[2023-04-30T21:44:05+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000284s ]
+[2023-04-30T21:44:10+08:00][sql] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:44:10+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000984s ]
+[2023-04-30T21:44:10+08:00][error] [0]Call to undefined function app\admin\model\keyrandom()[D:\aaatemp\web\tp6\app\admin\model\Card.php:37]
+[2023-04-30T21:46:23+08:00][error] [0]Call to undefined function app\admin\model\keyrandom()
+[2023-04-30T21:46:24+08:00][error] [0]Call to undefined function app\admin\model\keyrandom()
+[2023-04-30T21:46:30+08:00][error] [0]Call to undefined function app\admin\model\keyrandom()
+[2023-04-30T21:46:51+08:00][sql] CONNECT:[ UseTime:0.000722s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:46:51+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000718s ]
+[2023-04-30T21:46:51+08:00][error] [0]Call to undefined function app\admin\model\keyrandom()[D:\aaatemp\web\tp6\app\admin\model\Card.php:37]
+[2023-04-30T21:48:54+08:00][sql] CONNECT:[ UseTime:0.017375s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T21:48:54+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000607s ]
+[2023-04-30T21:48:54+08:00][error] [0]Call to undefined function app\admin\model\keyrandom()[D:\aaatemp\web\tp6\app\admin\model\Card.php:37]
+[2023-04-30T22:33:14+08:00][sql] CONNECT:[ UseTime:0.012276s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:14+08:00][sql] SHOW FULL COLUMNS FROM `hg_node` [ RunTime:0.000714s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT node_id as id,node_name as title,node_pid as pid,`node_path`,`node_icon` FROM `hg_node` WHERE  `is_menu` = 2 ORDER BY `node_sort` [ RunTime:0.000494s ]
+[2023-04-30T22:33:14+08:00][sql] CONNECT:[ UseTime:0.000525s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:14+08:00][sql] SHOW FULL COLUMNS FROM `hg_user` [ RunTime:0.000625s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` LIMIT 1 [ RunTime:0.000225s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` WHERE  `reg_time` >= '2023-05-01 02:33:14' LIMIT 1 [ RunTime:0.000255s ]
+[2023-04-30T22:33:14+08:00][sql] SHOW FULL COLUMNS FROM `hg_ask` [ RunTime:0.000445s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_ask` LIMIT 1 [ RunTime:0.000169s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_ask` WHERE  `time` >= '2023-05-01 02:33:14' LIMIT 1 [ RunTime:0.000237s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` WHERE  `pay_id` > 1 LIMIT 1 [ RunTime:0.000207s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_user` WHERE  `pay_id` > 1  AND `reg_time` >= '2023-05-01 02:33:14' LIMIT 1 [ RunTime:0.000218s ]
+[2023-04-30T22:33:14+08:00][sql] SHOW FULL COLUMNS FROM `hg_key` [ RunTime:0.000443s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_key` LIMIT 1 [ RunTime:0.000227s ]
+[2023-04-30T22:33:14+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_key` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[2023-04-30T22:33:17+08:00][sql] CONNECT:[ UseTime:0.013808s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:17+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000479s ]
+[2023-04-30T22:33:17+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000277s ]
+[2023-04-30T22:33:17+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000343s ]
+[2023-04-30T22:33:17+08:00][sql] CONNECT:[ UseTime:0.012521s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:17+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000617s ]
+[2023-04-30T22:33:17+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000276s ]
+[2023-04-30T22:33:18+08:00][sql] CONNECT:[ UseTime:0.013482s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:18+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000678s ]
+[2023-04-30T22:33:18+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000346s ]
+[2023-04-30T22:33:18+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000267s ]
+[2023-04-30T22:33:19+08:00][sql] CONNECT:[ UseTime:0.000821s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:19+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000602s ]
+[2023-04-30T22:33:19+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000262s ]
+[2023-04-30T22:33:27+08:00][sql] CONNECT:[ UseTime:0.000796s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:27+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000568s ]
+[2023-04-30T22:33:27+08:00][sql] SELECT * FROM `hg_card` WHERE  `card` = 'NjPRGTFyd97Z' LIMIT 1 [ RunTime:0.000395s ]
+[2023-04-30T22:33:27+08:00][sql] INSERT INTO `hg_card` SET `card` = 'NjPRGTFyd97Z' , `cardsmid` = 7 [ RunTime:0.001123s ]
+[2023-04-30T22:33:27+08:00][sql] SHOW FULL COLUMNS FROM `hg_operate_log` [ RunTime:0.000573s ]
+[2023-04-30T22:33:27+08:00][sql] INSERT INTO `hg_operate_log` SET `operator` = 'admin' , `operator_ip` = '127.0.0.1' , `operate_method` = 'card/add' , `operate_desc` = '添加充值卡：1' , `operate_time` = '2023-04-30 22:33:27' [ RunTime:0.002412s ]
+[2023-04-30T22:33:27+08:00][sql] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:27+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000660s ]
+[2023-04-30T22:33:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000307s ]
+[2023-04-30T22:33:27+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000301s ]
+[2023-04-30T22:33:33+08:00][sql] CONNECT:[ UseTime:0.000560s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:33+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000600s ]
+[2023-04-30T22:33:33+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000351s ]
+[2023-04-30T22:33:33+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000326s ]
+[2023-04-30T22:33:34+08:00][sql] CONNECT:[ UseTime:0.019932s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:34+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000556s ]
+[2023-04-30T22:33:34+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000325s ]
+[2023-04-30T22:33:34+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000293s ]
+[2023-04-30T22:33:35+08:00][sql] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:35+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000543s ]
+[2023-04-30T22:33:35+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000172s ]
+[2023-04-30T22:33:38+08:00][sql] CONNECT:[ UseTime:0.023974s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:38+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000746s ]
+[2023-04-30T22:33:38+08:00][sql] SELECT * FROM `hg_card` WHERE  `card` = '2K9KIkcs89Nb' LIMIT 1 [ RunTime:0.000299s ]
+[2023-04-30T22:33:38+08:00][sql] INSERT INTO `hg_card` SET `card` = '2K9KIkcs89Nb' , `cardsmid` = 1 [ RunTime:0.000263s ]
+[2023-04-30T22:33:38+08:00][sql] SELECT * FROM `hg_card` WHERE  `card` = '3GRCHJowIuNU' LIMIT 1 [ RunTime:0.000199s ]
+[2023-04-30T22:33:38+08:00][sql] INSERT INTO `hg_card` SET `card` = '3GRCHJowIuNU' , `cardsmid` = 1 [ RunTime:0.000151s ]
+[2023-04-30T22:33:38+08:00][sql] SHOW FULL COLUMNS FROM `hg_operate_log` [ RunTime:0.000325s ]
+[2023-04-30T22:33:38+08:00][sql] INSERT INTO `hg_operate_log` SET `operator` = 'admin' , `operator_ip` = '127.0.0.1' , `operate_method` = 'card/add' , `operate_desc` = '添加充值卡：2' , `operate_time` = '2023-04-30 22:33:38' [ RunTime:0.002728s ]
+[2023-04-30T22:33:38+08:00][sql] CONNECT:[ UseTime:0.016428s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:38+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000549s ]
+[2023-04-30T22:33:38+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000293s ]
+[2023-04-30T22:33:38+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000236s ]
+[2023-04-30T22:33:43+08:00][sql] CONNECT:[ UseTime:0.024756s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:43+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000540s ]
+[2023-04-30T22:33:43+08:00][sql] SELECT * FROM `hg_card` WHERE  `id` = 570 LIMIT 1 [ RunTime:0.000300s ]
+[2023-04-30T22:33:43+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000480s ]
+[2023-04-30T22:33:43+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000203s ]
+[2023-04-30T22:33:46+08:00][sql] CONNECT:[ UseTime:0.015423s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:46+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000651s ]
+[2023-04-30T22:33:46+08:00][sql] SELECT * FROM `hg_card` WHERE  `card` = 'NjPRGTFyd97Z'  AND `id` <> 570 LIMIT 1 [ RunTime:0.000296s ]
+[2023-04-30T22:33:46+08:00][sql] UPDATE `hg_card`  SET `card` = 'NjPRGTFyd97Z' , `status` = 0 , `cardsmid` = 7  WHERE  `id` = 570 [ RunTime:0.000294s ]
+[2023-04-30T22:33:46+08:00][sql] SHOW FULL COLUMNS FROM `hg_operate_log` [ RunTime:0.000394s ]
+[2023-04-30T22:33:46+08:00][sql] INSERT INTO `hg_operate_log` SET `operator` = 'admin' , `operator_ip` = '127.0.0.1' , `operate_method` = 'card/edit' , `operate_desc` = '编辑充值卡：NjPRGTFyd97Z' , `operate_time` = '2023-04-30 22:33:46' [ RunTime:0.002663s ]
+[2023-04-30T22:33:46+08:00][sql] CONNECT:[ UseTime:0.023496s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:46+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000865s ]
+[2023-04-30T22:33:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000337s ]
+[2023-04-30T22:33:46+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000349s ]
+[2023-04-30T22:33:48+08:00][sql] CONNECT:[ UseTime:0.017106s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:48+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000576s ]
+[2023-04-30T22:33:48+08:00][sql] SELECT * FROM `hg_card` WHERE  `id` = 570 LIMIT 1 [ RunTime:0.000306s ]
+[2023-04-30T22:33:48+08:00][sql] SHOW FULL COLUMNS FROM `hg_cardsm` [ RunTime:0.000375s ]
+[2023-04-30T22:33:48+08:00][sql] SELECT `name`,`id` FROM `hg_cardsm` [ RunTime:0.000279s ]
+[2023-04-30T22:33:49+08:00][sql] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:49+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000586s ]
+[2023-04-30T22:33:49+08:00][sql] SELECT * FROM `hg_card` WHERE  `card` = 'NjPRGTFyd97Z'  AND `id` <> 570 LIMIT 1 [ RunTime:0.000449s ]
+[2023-04-30T22:33:49+08:00][sql] UPDATE `hg_card`  SET `card` = 'NjPRGTFyd97Z' , `status` = 1 , `cardsmid` = 7  WHERE  `id` = 570 [ RunTime:0.000311s ]
+[2023-04-30T22:33:49+08:00][sql] SHOW FULL COLUMNS FROM `hg_operate_log` [ RunTime:0.000535s ]
+[2023-04-30T22:33:49+08:00][sql] INSERT INTO `hg_operate_log` SET `operator` = 'admin' , `operator_ip` = '127.0.0.1' , `operate_method` = 'card/edit' , `operate_desc` = '编辑充值卡：NjPRGTFyd97Z' , `operate_time` = '2023-04-30 22:33:49' [ RunTime:0.002235s ]
+[2023-04-30T22:33:49+08:00][sql] CONNECT:[ UseTime:0.025218s ] mysql:host=127.0.0.1;port=3306;dbname=aichat;charset=utf8
+[2023-04-30T22:33:49+08:00][sql] SHOW FULL COLUMNS FROM `hg_card` [ RunTime:0.000583s ]
+[2023-04-30T22:33:49+08:00][sql] SELECT COUNT(*) AS think_count FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` LIMIT 1 [ RunTime:0.000319s ]
+[2023-04-30T22:33:49+08:00][sql] SELECT `c`.*,s.name as cname FROM `hg_card` `c` INNER JOIN `hg_cardsm` `s` ON `s`.`id`=`c`.`cardsmid` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000338s ]
