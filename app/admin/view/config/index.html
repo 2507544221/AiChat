@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>编辑管理员</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/admin/style/admin.css" media="all">
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layuimini-container">
+        <div class="layuimini-main">
+
+            <div class="layui-form layuimini-form">
+                <form class="layui-form" action="" lay-filter="component-form-element">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label required">网站名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="sitename" lay-verify="required" lay-reqtext="网站域名不能为空" placeholder="请输入网站名称" value="{$config.sitename}" class="layui-input">
+                            <tip>填写自己部署网站的名称。</tip>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label required">网站域名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="domain" lay-verify="required" lay-reqtext="网站域名不能为空" placeholder="请输入网站域名 例如http://xxx.com/" value="{$config.domain}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label required">logo</label>
+                        <div class="layui-input-block layuimini-upload">
+                            <input name="logo" lay-verify="required" id="logo" placeholder="上传logo" value="{$config.logo}" class="layui-input layui-col-xs6" lay-reqtext="请上传logo">
+                            <div class="layuimini-upload-btn">
+                                <span>
+                                    <a id="site_logo" class="layui-btn"><i class="fa fa-upload"></i> 上传</a>
+                                    <input class="layui-upload-file" type="file" accept="" name="file"></span>
+
+                            </div>
+                            <img id="logopng" src="{$config.logo}" style="width:100px;">
+                        </div>
+
+                         </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">API域名</label>
+                        <div class="layui-input-inline" style="width: 200px;">
+                            <input type="text" name="apidomain" lay-verify="required" value="{$config.apidomain}" class="layui-input">
+                        </div>
+                        <div class="layui-input-inline layui-input-company">推荐:https://openapi.ssiic.com</div>
+                        <div class="layui-form-mid layui-word-aux">默认:https://api.openai.com</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">问答间隔</label>
+                        <div class="layui-input-inline" style="width: 200px;">
+                            <input type="text" name="interval" lay-verify="number" value="{$config.interval}" class="layui-input">
+                        </div>
+                        <div class="layui-input-inline layui-input-company">秒</div>
+                        <div class="layui-form-mid layui-word-aux">间隔多久问1次</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">是否免费</label>
+                        <div class="layui-input-inline" style="width: 250px;">
+                            <input type="radio" name="isfree" value="1" title="开启"  {if $config['isfree'] eq 1} checked {/if}><div class="layui-unselect layui-form-radio"><div>开启</div></div>
+                            <input type="radio" name="isfree" value="0" title="关闭"  {if $config['isfree'] eq 0} checked {/if}><div class="layui-unselect layui-form-radio layui-form-radioed"><div>关闭</div></div>
+                        </div>
+                        <div class="layui-input-inline layui-input-company">默认关闭</div>
+                        <div class="layui-form-mid layui-word-aux">开启免费所有用户可免卡使用</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">开启广告</label>
+                        <div class="layui-input-inline"  style="width: 250px;">
+                            <input type="radio" name="isad" value="1" title="开启" {if $config['isad'] eq 1} checked {/if}><div class="layui-unselect layui-form-radio"><div>开启</div></div>
+                            <input type="radio" name="isad" value="0" title="关闭" {if $config['isad'] eq 0} checked {/if}><div class="layui-unselect layui-form-radio layui-form-radioed"><div>关闭</div></div>
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">是否开启广告</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">广告信息</label>
+                        <div class="layui-input-inline" style="width: 200px;">
+                            <input type="text" name="adurl" lay-verify="" value="{$config.adurl}" class="layui-input">
+                        </div>
+                        <div class="layui-input-inline" style="width: 200px;">
+                            <input type="text" name="adtitle" lay-verify="" value="{$config.adtitle}" class="layui-input">
+                        </div>
+                        <div class="layui-input-inline layui-input-company">广告信息</div>
+                        <div class="layui-form-mid layui-word-aux">在每条问答下方显示</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label required">欢迎语</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="welcome" lay-verify="required" lay-reqtext="未登录欢迎语" placeholder="未登录欢迎语" value="{$config.welcome}" class="layui-input">
+                            <tip>未登录欢迎语。</tip>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label required">首页标题</label>
+                        <div class="layui-input-block">
+                            <textarea name="title" class="layui-textarea">{$config.title}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">META关键词</label>
+                        <div class="layui-input-block">
+                            <textarea name="keywords" class="layui-textarea" placeholder="多个关键词用英文状态 , 号分割">{$config.keywords}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">META描述</label>
+                        <div class="layui-input-block">
+                            <textarea name="descript" class="layui-textarea">{$config.descript}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-normal" lay-submit="" lay-filter="setting">确认保存</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '/static/admin/' //静态资源所在路径
+    }).use(['form','upload'], function(){
+        var $ = layui.$
+            ,admin = layui.admin
+            ,element = layui.element
+            ,form = layui.form,
+             upload = layui.upload;
+
+
+        var uploadInst = upload.render({
+            elem: '#site_logo' //绑定元素
+            ,url: '{:url("config/upload")}' //上传接口
+            ,done: function(res){
+                //上传完毕回调
+                if(res.state ==0){
+                    return layer.msg('上传失败');
+                }else {
+                    $("#logo").val(res.path);
+                    $("#logopng").attr("src",res.path);
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
+
+        form.on('submit(component-form-element)', function(data){
+
+            $.post("{:url('config/index')}", data.field, function (res) {
+
+                if(0 == res.code) {
+
+                    layer.msg(res.msg);
+                    setTimeout(function () {
+
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                        window.parent.renderTable();
+                    }, 200);
+                } else {
+
+                    layer.alert(res.msg, {
+                        'title': '添加错误',
+                        'icon': 2
+                    });
+                }
+            }, 'json');
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
